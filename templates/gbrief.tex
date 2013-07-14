@@ -1,0 +1,38 @@
+\documentclass[12pt,german][rundauf]g-brief[rundzu]
+\usepackage[utf8][rundauf]inputenc[rundzu]
+\usepackage[rundauf]pdfpages[rundzu]
+\usepackage[rundauf]times[rundzu]
+\usepackage[rundauf]ulem[rundzu]
+\usepackage[rundauf]currvita[rundzu]
+\usepackage[rundauf]geometry[rundzu]
+\usepackage[rundauf]pdfpages[rundzu]
+\usepackage[rundauf]ngerman[rundzu]
+
+\fenstermarken
+\faltmarken
+\trennlinien
+
+\Name                [rundauf]{{ absname }}[rundzu]
+\Strasse             [rundauf]{{ absstreet }}[rundzu]
+\Ort                 [rundauf]{{ abslocationnum }} {{ abslocation }}[rundzu]
+\Telefon             [rundauf]{{ abstelephone }}[rundzu]
+\EMail               [rundauf]{{ absemail }}[rundzu]
+
+\Unterschrift        [rundauf]{{ absname }}[rundzu]
+
+\Adresse             [rundauf]{{ empname }} \\
+                                {{ empstreet }}\\
+                                {{ emplocationnum }}-{{ emplocation }}
+                     [rundzu]
+\Betreff             [rundauf]{{ subject }}[rundzu]
+\Datum               [rundauf]\today[rundzu]
+\Anrede              [rundauf]{{ title }},[rundzu]
+\Gruss               [rundauf]{{ greeting }}[rundzu][rundauf]1cm[rundzu]           
+
+\begin[rundauf]document[rundzu]
+\begin[rundauf]g-brief[rundzu]
+
+{{ text }}
+
+\end[rundauf]g-brief[rundzu]
+\end[rundauf]document[rundzu]
