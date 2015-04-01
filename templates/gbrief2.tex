@@ -1,8 +1,10 @@
 \documentclass[12pt,ngerman][rundauf]g-brief2[rundzu]
 \usepackage[utf8][rundauf]inputenc[rundzu]
+{% if mark %}
 \faltmarken
-\fenstermarken
 \lochermarke
+{% endif %}
+\fenstermarken
 \trennlinien
 \Name[rundauf]{{ absname }}[rundzu]
 \RetourAdresse[rundauf]{{ absname }} · {{ absstreet }} · {{ abslocationnum }} {{ abslocation }}[rundzu]

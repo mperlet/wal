@@ -87,9 +87,8 @@ jQuery(document).ready(function(){
              <h4>Brief</h4>
              <ul style="list-style-type:none;">
              <li><p>{{ form.subject(placeholder="Betreff", style="width:100%;") }}</p></li>
-             <li><p>{{ form.title(placeholder="Anfrede", style="width:100%;") }}</p></li>
+             <li><p>{{ form.title(placeholder="Anrede", style="width:100%;") }}</p></li>
              <li><p>{{ form.greeting(placeholder="Grußformel", style="width:100%;") }}</p></li>
-             <li><p></p></li>
              </ul>
         </div>
     </div>  
@@ -102,6 +101,7 @@ jQuery(document).ready(function(){
         <h4>Vorlage</h4>
         <ul style="list-style-type:none;">
         <li><p>{{ form.template(style="list-style-type:none;") }}</p></li>
+        <p>{{ form.mark }} <label for="{{ form.mark.id }}">{{ form.mark.label }}</label></p>
         <li><p><input class="btn btn-primary" value="Brief erstellen" type="submit"></p></li>  
         </ul>      
     </div>

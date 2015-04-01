@@ -43,7 +43,8 @@ def render_latex(form):
                                 subject = form.subject.data,
                                 title = form.title.data,
                                 greeting = form.greeting.data, 
-                                text = form.text.data)
+                                text = form.text.data,
+                                mark = form.mark.data)
     
     return rendertex.replace('[rundauf]', '{').replace('[rundzu]', '}')    
     
@@ -69,6 +70,7 @@ class LetterForm(Form):
                                                ('gbrief2', 'G-Brief2')
                                                ],
                                                default='gbrief')
+    mark = BooleanField(label=u'Faltmarken', default=True)
 
 app = Flask(__name__)
 
