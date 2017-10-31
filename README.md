@@ -7,32 +7,14 @@ The logo is a whale, the german word for whale is *Wal*.
 Wal stands for Write-A-Letter. ;-)
 
 
-## Installation
+## Installation with Vagrant
 
 ```
-$ git clone git://github.com/mathe77a/wal2.git
-$ sudo [apt-get/yum] install texlive texlive-latex-extra
-$ pip install -r requirements.txt
+git clone https://github.com/mperlet/wal.git && cd wal
+vagrant up
 ```
+By default, wal runs on port 5000. Check `http://localhost:5000`.
 
-### Download Sources Latex-Styles
-
-```
-http://www.cs.cmu.edu/afs/cs/misc/tex/common/teTeX-3.0-distrib/share/texmf/tex/latex/g-brief/g-brief.cls
-http://www.cs.cmu.edu/afs/cs/misc/tex/common/teTeX-1.0.1/lib/texmf/tex/latex/misc/pdfpages.sty
-http://computer-vision.org/4authors/eso-pic.sty
-http://computer-vision.org/4authors/crv_eso.sty
-http://code.haskell.org/~byorgey/TMR/Issue16/ucsencs.def
-http://code.haskell.org/~byorgey/TMR/Issue16/ucs.sty
-http://code.haskell.org/~byorgey/TMR/Issue16/uni-global.def
-http://ctan.mackichan.com/macros/plain/contrib/misc/ulem.sty
-https://raw.github.com/rivercheng/cv/master/currvita.sty
-http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/ucs/utf8x.def
-```
-
-```
-$ python wal.py
-```
 ## Try it
 
 [wal.mperlet.de](http://wal.mperlet.de/ "Write A Letter")
@@ -53,4 +35,3 @@ $ python wal.py
 
 ## License
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
