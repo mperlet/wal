@@ -6,6 +6,21 @@ Webapp to create a Din-A4-Letter online with LaTeX.
 The logo is a whale, the german word for whale is *Wal*.
 Wal stands for Write-A-Letter. ;-)
 
+## Run with Docker
+The wal default port is 5000. 
+
+### pull from dockerhub (https://hub.docker.com/r/mperlet/wal/)
+```
+docker pull mperlet/wal
+docker run -d -p127.0.0.1:5000:5000 mperlet/wal
+```
+
+### build local
+```
+git clone https://github.com/mperlet/wal.git && cd wal
+docker build -t wal .
+docker run -p127.0.0.1:5000:5000 -d -t wal
+```
 
 ## Installation with Vagrant
 
@@ -15,16 +30,9 @@ vagrant up
 ```
 By default, wal runs on port 5000. Check `http://localhost:5000`.
 
-## Installation with Docker
-
-```
-docker build -t wal .
-docker run -p127.0.0.1:5000:5000 -d -t wal
-```
-
 ## Try it
 
-[wal.mperlet.de](http://wal.mperlet.de/ "Write A Letter")
+[wal.mperlet.de](https://wal.mperlet.de/ "Write A Letter")
 
 ## Contributing
 1. Fork it
