@@ -13,7 +13,7 @@ RUN wget http://www.cs.cmu.edu/afs/cs/misc/tex/common/teTeX-3.0-distrib/share/te
     wget http://code.haskell.org/~byorgey/TMR/Issue16/uni-global.def &&\
     wget http://mirrors.sorengard.com/ctan/macros/latex/contrib/ulem/ulem.sty &&\
     wget https://raw.github.com/rivercheng/cv/master/currvita.sty &&\
-    wget http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/ucs/utf8x.def &&\
+    wget http://mirrors.concertpass.com/tex-archive/macros/latex/contrib/ucs/utf8x.def &&\   
     wget http://ctan.mirrors.hoobly.com/language/german/ngerman.sty &&\
     wget http://mirrors.ctan.org/macros/latex/contrib/ms.zip && unzip ms.zip && rm ms.zip && mv ms/* .
 RUN pip install -r requirements.txt
