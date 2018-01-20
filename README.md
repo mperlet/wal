@@ -15,6 +15,13 @@ vagrant up
 ```
 By default, wal runs on port 5000. Check `http://localhost:5000`.
 
+## Installation with Docker
+
+```
+docker build -t wal .
+docker run -p127.0.0.1:5000:5000 -d -t wal
+```
+
 ## Try it
 
 [wal.mperlet.de](http://wal.mperlet.de/ "Write A Letter")
